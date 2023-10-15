@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Implement option service
 builder.Services.Configure<AppSettingsOptions>
     (builder.Configuration.GetSection("weatherapi"));
 
